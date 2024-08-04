@@ -3,6 +3,7 @@ module github.com/tencent-connect/botgo
 go 1.16
 
 require (
+	github.com/BurntSushi/toml v1.4.0
 	github.com/go-redis/redis/v8 v8.11.4
 	github.com/go-resty/resty/v2 v2.6.0
 	github.com/google/uuid v1.3.0
