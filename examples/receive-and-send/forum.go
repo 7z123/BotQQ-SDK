@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 
-	"github.com/tencent-connect/botgo/dto"
-	"github.com/tencent-connect/botgo/event"
+	"github.com/2mf8/Go-QQ-Client/dto"
+	"github.com/2mf8/Go-QQ-Client/event"
 )
 
 // ThreadEventHandler 论坛主贴事件

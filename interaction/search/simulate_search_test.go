@@ -3,7 +3,7 @@ package search
 import (
 	"testing"
 
-	"github.com/tencent-connect/botgo/log"
+	"github.com/2mf8/Go-QQ-Client/log"
 )
 
 func TestSimulateSearch(t *testing.T) {
