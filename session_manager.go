@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/tencent-connect/botgo/dto"
-	"github.com/tencent-connect/botgo/sessions/local"
-	"github.com/tencent-connect/botgo/token"
+	"github.com/2mf8/Go-QQ-Client/dto"
+	"github.com/2mf8/Go-QQ-Client/sessions/local"
+	"github.com/2mf8/Go-QQ-Client/token"
 )
 
 // defaultSessionManager 默认实现的 session manager 为单机版本

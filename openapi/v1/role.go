@@ -3,8 +3,8 @@ package v1
 import (
 	"context"
 
-	"github.com/tencent-connect/botgo/dto"
-	"github.com/tencent-connect/botgo/log"
+	"github.com/2mf8/Go-QQ-Client/dto"
+	"github.com/2mf8/Go-QQ-Client/log"
 )
 
 func (o *openAPI) Roles(ctx context.Context, guildID string) (*dto.GuildRoles, error) {

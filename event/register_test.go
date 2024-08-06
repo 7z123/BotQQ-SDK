@@ -5,7 +5,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/tencent-connect/botgo/dto"
+	"github.com/2mf8/Go-QQ-Client/dto"
 )
 
 func TestRegisterHandlers(t *testing.T) {

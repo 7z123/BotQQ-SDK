@@ -5,8 +5,8 @@ import (
 	"math"
 	"time"
 
-	"github.com/tencent-connect/botgo/dto"
-	"github.com/tencent-connect/botgo/errs"
+	"github.com/2mf8/Go-QQ-Client/dto"
+	"github.com/2mf8/Go-QQ-Client/errs"
 )
 
 // CanNotResumeErrSet 不能进行 resume 操作的错误码

@@ -2,9 +2,9 @@ package v1
 
 import (
 	"context"
-	"github.com/tencent-connect/botgo/log"
+	"github.com/2mf8/Go-QQ-Client/log"
 
-	"github.com/tencent-connect/botgo/dto"
+	"github.com/2mf8/Go-QQ-Client/dto"
 )
 
 // PostAudio AudioAPI 接口实现

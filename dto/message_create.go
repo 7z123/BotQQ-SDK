@@ -1,6 +1,6 @@
 package dto
 
-import "github.com/tencent-connect/botgo/dto/keyboard"
+import "github.com/2mf8/Go-QQ-Client/dto/keyboard"
 
 // MessageToCreate 发送消息结构体定义
 type MessageToCreate struct {

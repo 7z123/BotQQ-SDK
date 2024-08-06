@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/tencent-connect/botgo/dto/keyboard"
+	"github.com/2mf8/Go-QQ-Client/dto/keyboard"
 
-	"github.com/tencent-connect/botgo/dto"
-	"github.com/tencent-connect/botgo/openapi"
+	"github.com/2mf8/Go-QQ-Client/dto"
+	"github.com/2mf8/Go-QQ-Client/openapi"
 )
 
 func TestMessage(t *testing.T) {

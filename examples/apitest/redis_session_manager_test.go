@@ -6,10 +6,10 @@ import (
 	"time"
 
 	"github.com/go-redis/redis/v8"
-	"github.com/tencent-connect/botgo"
-	"github.com/tencent-connect/botgo/dto"
-	"github.com/tencent-connect/botgo/event"
-	"github.com/tencent-connect/botgo/sessions/remote"
+	"github.com/2mf8/Go-QQ-Client"
+	"github.com/2mf8/Go-QQ-Client/dto"
+	"github.com/2mf8/Go-QQ-Client/event"
+	"github.com/2mf8/Go-QQ-Client/sessions/remote"
 )
 
 func Test_redisSessionManager(t *testing.T) {

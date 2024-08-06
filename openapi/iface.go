@@ -4,8 +4,8 @@ import (
 	"context"
 	"time"
 
-	"github.com/tencent-connect/botgo/dto"
-	"github.com/tencent-connect/botgo/token"
+	"github.com/2mf8/Go-QQ-Client/dto"
+	"github.com/2mf8/Go-QQ-Client/token"
 )
 
 // RetractMessageOption 撤回消息可选参数

@@ -5,9 +5,9 @@ import (
 	"encoding/json"
 	"time"
 
-	"github.com/tencent-connect/botgo/dto"
-	"github.com/tencent-connect/botgo/log"
-	"github.com/tencent-connect/botgo/token"
+	"github.com/2mf8/Go-QQ-Client/dto"
+	"github.com/2mf8/Go-QQ-Client/log"
+	"github.com/2mf8/Go-QQ-Client/token"
 )
 
 // distributeSession 根据 shards 生产初始化的 session，这里需要抢一个分布式锁，抢到锁的服务器，负责把session都生产到 redis 中

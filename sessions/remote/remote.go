@@ -9,12 +9,12 @@ import (
 
 	"github.com/go-redis/redis/v8"
 	"github.com/google/uuid"
-	"github.com/tencent-connect/botgo/dto"
-	"github.com/tencent-connect/botgo/log"
-	"github.com/tencent-connect/botgo/sessions/manager"
-	"github.com/tencent-connect/botgo/sessions/remote/lock"
-	"github.com/tencent-connect/botgo/token"
-	"github.com/tencent-connect/botgo/websocket"
+	"github.com/2mf8/Go-QQ-Client/dto"
+	"github.com/2mf8/Go-QQ-Client/log"
+	"github.com/2mf8/Go-QQ-Client/sessions/manager"
+	"github.com/2mf8/Go-QQ-Client/sessions/remote/lock"
+	"github.com/2mf8/Go-QQ-Client/token"
+	"github.com/2mf8/Go-QQ-Client/websocket"
 )
 
 const (

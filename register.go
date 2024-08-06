@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/tencent-connect/botgo/log"
-	"github.com/tencent-connect/botgo/openapi"
-	"github.com/tencent-connect/botgo/websocket"
+	"github.com/2mf8/Go-QQ-Client/log"
+	"github.com/2mf8/Go-QQ-Client/openapi"
+	"github.com/2mf8/Go-QQ-Client/websocket"
 )
 
 // SetLogger 设置 logger，需要实现 sdk 的 log.Logger 接口

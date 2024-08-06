@@ -1,4 +1,4 @@
-module github.com/tencent-connect/botgo
+module github.com/2mf8/Go-QQ-Client
 
 go 1.16
 

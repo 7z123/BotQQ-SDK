@@ -2,12 +2,12 @@
 package main
 
 import (
-	"github.com/tencent-connect/botgo/errs"
-	"github.com/tencent-connect/botgo/log"
-	"github.com/tencent-connect/botgo/openapi"
-	v1 "github.com/tencent-connect/botgo/openapi/v1"
-	"github.com/tencent-connect/botgo/token"
-	"github.com/tencent-connect/botgo/websocket/client"
+	"github.com/2mf8/Go-QQ-Client/errs"
+	"github.com/2mf8/Go-QQ-Client/log"
+	"github.com/2mf8/Go-QQ-Client/openapi"
+	v1 "github.com/2mf8/Go-QQ-Client/openapi/v1"
+	"github.com/2mf8/Go-QQ-Client/token"
+	"github.com/2mf8/Go-QQ-Client/websocket/client"
 )
 
 func init() {

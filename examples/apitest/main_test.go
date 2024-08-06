@@ -8,9 +8,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/tencent-connect/botgo"
-	"github.com/tencent-connect/botgo/openapi"
-	"github.com/tencent-connect/botgo/token"
+	"github.com/2mf8/Go-QQ-Client"
+	"github.com/2mf8/Go-QQ-Client/openapi"
+	"github.com/2mf8/Go-QQ-Client/token"
 	"gopkg.in/yaml.v2"
 )
 

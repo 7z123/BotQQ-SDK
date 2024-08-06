@@ -6,10 +6,10 @@ import (
 	"time"
 
 	log "github.com/sirupsen/logrus"
-	"github.com/tencent-connect/botgo/dto"
-	"github.com/tencent-connect/botgo/event"
-	"github.com/tencent-connect/botgo/token"
-	"github.com/tencent-connect/botgo/websocket"
+	"github.com/2mf8/Go-QQ-Client/dto"
+	"github.com/2mf8/Go-QQ-Client/event"
+	"github.com/2mf8/Go-QQ-Client/token"
+	"github.com/2mf8/Go-QQ-Client/websocket"
 )
 
 func main() {
