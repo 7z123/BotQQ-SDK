@@ -46,8 +46,8 @@ func TestMain(m *testing.M) {
 	}
 	log.Println(conf)
 
-	botToken = token.BotToken(conf.AppID, conf.Token)
-	api = botgo.NewOpenAPI(botToken).WithTimeout(3 * time.Second)
+	botToken = token.BotToken(conf.AppID, conf.Token, string(token.TypeBot))
+	api = bot.NewOpenAPI(botToken).WithTimeout(3 * time.Second)
 
 	os.Exit(m.Run())
 }

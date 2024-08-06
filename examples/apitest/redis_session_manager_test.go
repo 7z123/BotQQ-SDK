@@ -25,7 +25,7 @@ func Test_redisSessionManager(t *testing.T) {
 		},
 	)
 
-	botgo.SetSessionManager(remote.New(conn, remote.WithClusterKey("abcccc")))
+	bot.SetSessionManager(remote.New(conn, remote.WithClusterKey("abcccc")))
 
 	t.Run(
 		"at message", func(t *testing.T) {
@@ -35,7 +35,7 @@ func Test_redisSessionManager(t *testing.T) {
 			}
 			intent := event.RegisterHandlers(message)
 			ws.Shards = 2
-			botgo.NewSessionManager().Start(ws, botToken, &intent)
+			bot.NewSessionManager().Start(ws, botToken, &intent)
 		},
 	)
 }

@@ -29,9 +29,9 @@ func main() {
 	}
 
 	// 初始化 openapi，正式环境
-	api := botgo.NewOpenAPI(botToken).WithTimeout(3 * time.Second)
+	api := bot.NewOpenAPI(botToken).WithTimeout(3 * time.Second)
 	// 沙箱环境
-	// api := botgo.NewSandboxOpenAPI(botToken).WithTimeout(3 * time.Second)
+	// api := bot.NewSandboxOpenAPI(botToken).WithTimeout(3 * time.Second)
 
 	// 获取 websocket 信息
 	wsInfo, err := api.WS(ctx, nil, "")
@@ -66,7 +66,7 @@ func main() {
 		ThreadEventHandler(),
 	)
 	// 指定需要启动的分片数为 2 的话可以手动修改 wsInfo
-	if err = botgo.NewSessionManager().Start(wsInfo, botToken, &intent); err != nil {
+	if err = bot.NewSessionManager().Start(wsInfo, botToken, &intent); err != nil {
 		log.Fatalln(err)
 	}
 }

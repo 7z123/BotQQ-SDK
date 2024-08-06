@@ -14,7 +14,7 @@ QQ频道机器人，官方 GOLANG SDK。
 ```golang
 func main() {
     token := token.BotToken(conf.AppID, conf.Token)
-    api := botgo.NewOpenAPI(token).WithTimeout(3 * time.Second)
+    api := bot.NewOpenAPI(token).WithTimeout(3 * time.Second)
     ctx := context.Background()
 
     ws, err := api.WS(ctx, nil, "")
@@ -29,8 +29,8 @@ func main() {
 
 ```golang
 func main() {
-    token := token.BotToken(conf.AppID, conf.Token)
-    api := botgo.NewOpenAPI(token).WithTimeout(3 * time.Second)
+    token := token.BotToken(conf.AppID, conf.Token, string(token.TypeBot))
+    api := bot.NewOpenAPI(token).WithTimeout(3 * time.Second)
     ctx := context.Background()
     ws, err := api.WS(ctx, nil, "")
     if err != nil {
@@ -44,7 +44,7 @@ func main() {
     }
     intent := websocket.RegisterHandlers(atMessage)
     // 启动 session manager 进行 ws 连接的管理，如果接口返回需要启动多个 shard 的连接，这里也会自动启动多个
-    botgo.NewSessionManager().Start(ws, token, &intent)
+    bot.NewSessionManager().Start(ws, token, &intent)
 }
 ```
 

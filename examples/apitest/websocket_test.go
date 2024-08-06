@@ -20,7 +20,7 @@ func Test_websocket(t *testing.T) {
 				return nil
 			}
 			intent := event.RegisterHandlers(message)
-			botgo.NewSessionManager().Start(ws, botToken, &intent)
+			bot.NewSessionManager().Start(ws, botToken, &intent)
 		},
 	)
 	t.Run(
@@ -31,7 +31,7 @@ func Test_websocket(t *testing.T) {
 			}
 			ws.Shards = 2
 			intent := event.RegisterHandlers(message)
-			botgo.NewSessionManager().Start(ws, botToken, &intent)
+			bot.NewSessionManager().Start(ws, botToken, &intent)
 		},
 	)
 	t.Run(
@@ -45,7 +45,7 @@ func Test_websocket(t *testing.T) {
 				return nil
 			}
 			intent := event.RegisterHandlers(message, guildEvent)
-			botgo.NewSessionManager().Start(ws, botToken, &intent)
+			bot.NewSessionManager().Start(ws, botToken, &intent)
 		},
 	)
 	t.Run(
@@ -57,7 +57,7 @@ func Test_websocket(t *testing.T) {
 				return nil
 			}
 			intent := event.RegisterHandlers(message)
-			botgo.NewSessionManager().Start(ws, botToken, &intent)
+			bot.NewSessionManager().Start(ws, botToken, &intent)
 		},
 	)
 	t.Run(
@@ -69,7 +69,7 @@ func Test_websocket(t *testing.T) {
 				return nil
 			}
 			intent := event.RegisterHandlers(message)
-			botgo.NewSessionManager().Start(ws, botToken, &intent)
+			bot.NewSessionManager().Start(ws, botToken, &intent)
 		},
 	)
 	t.Run(
@@ -81,7 +81,7 @@ func Test_websocket(t *testing.T) {
 				return nil
 			}
 			intent := event.RegisterHandlers(message)
-			botgo.NewSessionManager().Start(ws, botToken, &intent)
+			bot.NewSessionManager().Start(ws, botToken, &intent)
 		},
 	)
 	t.Run(
@@ -93,7 +93,7 @@ func Test_websocket(t *testing.T) {
 				return nil
 			}
 			intent := event.RegisterHandlers(message)
-			botgo.NewSessionManager().Start(ws, botToken, &intent)
+			bot.NewSessionManager().Start(ws, botToken, &intent)
 		},
 	)
 	t.Run(
@@ -105,7 +105,7 @@ func Test_websocket(t *testing.T) {
 				return nil
 			}
 			intent := event.RegisterHandlers(message)
-			botgo.NewSessionManager().Start(ws, botToken, &intent)
+			bot.NewSessionManager().Start(ws, botToken, &intent)
 		},
 	)
 }

@@ -23,7 +23,7 @@ func main() {
 		log.Fatalln("error log new", err)
 	}
 	// 把新的 logger 设置到 sdk 上，替换掉老的控制台 logger
-	botgo.SetLogger(logger)
+	bot.SetLogger(logger)
 
 	// 加载 appid 和 token
 	botToken := token.New(token.TypeBot)
@@ -31,7 +31,7 @@ func main() {
 		log.Fatalln(err)
 	}
 	// 初始化 openapi
-	api := botgo.NewOpenAPI(botToken).WithTimeout(3 * time.Second)
+	api := bot.NewOpenAPI(botToken).WithTimeout(3 * time.Second)
 	// 获取 websocket 信息
 	wsInfo, err := api.WS(ctx, nil, "")
 	if err != nil {
@@ -39,7 +39,7 @@ func main() {
 	}
 	// 根据不同的回调，生成 intents
 	intent := event.RegisterHandlers(ATMessageEventHandler(api))
-	if err = botgo.NewSessionManager().Start(wsInfo, botToken, &intent); err != nil {
+	if err = bot.NewSessionManager().Start(wsInfo, botToken, &intent); err != nil {
 		log.Fatalln(err)
 	}
 }
