@@ -4,13 +4,15 @@ import "encoding/json"
 
 // Interaction 互动行为对象
 type Interaction struct {
-	ID            string           `json:"id,omitempty"`             // 互动行为唯一标识
-	ApplicationID string           `json:"application_id,omitempty"` // 应用ID
-	Type          InteractionType  `json:"type,omitempty"`           // 互动类型
-	Data          *InteractionData `json:"data,omitempty"`           // 互动数据
-	GuildID       string           `json:"guild_id,omitempty"`       // 频道 ID
-	ChannelID     string           `json:"channel_id,omitempty"`     // 子频道 ID
-	Version       uint32           `json:"version,omitempty"`        //	版本，默认为 1
+	ID                string           `json:"id,omitempty"`             // 互动行为唯一标识
+	ApplicationID     string           `json:"application_id,omitempty"` // 应用ID
+	Type              InteractionType  `json:"type,omitempty"`           // 互动类型
+	Data              *InteractionData `json:"data,omitempty"`           // 互动数据
+	GuildID           string           `json:"guild_id,omitempty"`       // 频道 ID
+	ChannelID         string           `json:"channel_id,omitempty"`     // 子频道 ID
+	GroupOpenID       string           `json:"group_openid,omitempty"`   // 群 ID
+	GroupMemberOpenID string           `json:"group_member_openid,omitempty"`
+	Version           uint32           `json:"version,omitempty"` //	版本，默认为 1
 }
 
 // InteractionType 互动类型

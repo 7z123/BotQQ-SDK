@@ -83,6 +83,12 @@ func ParseData(message []byte, target interface{}) error {
 	return err
 }
 
+// ParseData 解析数据
+func GetId(message []byte) string {
+	data := gjson.Get(string(message), "id")
+	return data.String()
+}
+
 func guildHandler(payload *dto.WSPayload, message []byte) error {
 	data := &dto.WSGuildData{}
 	if err := ParseData(message, data); err != nil {
@@ -264,6 +270,7 @@ func interactionHandler(payload *dto.WSPayload, message []byte) error {
 	if err := ParseData(message, data); err != nil {
 		return err
 	}
+	data.ID = GetId(message)
 	if DefaultHandlers.Interaction != nil {
 		return DefaultHandlers.Interaction(payload, data)
 	}
