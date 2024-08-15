@@ -1,11 +1,49 @@
-# BotGo
+# Go-QQ-Client
 
 QQ频道机器人，官方 GOLANG SDK。
 
-![Build](https://github.com/2mf8/Go-QQ-Client/actions/workflows/build.yml/badge.svg)
 [![Go Reference](https://pkg.go.dev/badge/github.com/2mf8/Go-QQ-Client.svg)](https://pkg.go.dev/github.com/2mf8/Go-QQ-Client)
-[![Examples](https://img.shields.io/badge/BotGo-examples-yellowgreen)](https://github.com/2mf8/Go-QQ-Client/tree/master/examples)
 
+<details>
+
+<summary><font size="4">已完成功能/开发计划列表</font></summary>
+
+### **登录**
+
+- [x] 登录
+
+### **消息类型**
+- [x] 文本
+- [x] 图片
+- [x] 语音
+- [x] MarkDown
+- [ ] 表情
+- [ ] At
+- [ ] 回复
+- [ ] 长消息(仅群聊/私聊)
+- [ ] 链接分享
+- [ ] 小程序(暂只支持RAW)
+- [x] 短视频
+- [ ] 合并转发
+- [ ] 群文件(上传与接收信息)
+
+### **群聊**
+
+- [x] 收发群消息
+- [x] 机器人加群通知
+- [x] 机器人离群通知
+- [x] 群接收机器人主动消息通知
+- [x] 群拒绝机器人主动消息通知
+
+### **C2C**
+
+- [x] 收发C2C消息
+- [x] 机器人加好友通知
+- [x] 机器人删好友通知
+- [x] 接收机器人消息通知
+- [x] 拒绝机器人消息通知
+
+</details>
 
 ## 一、如何使用
 
@@ -57,7 +95,7 @@ sdk 中实现了两个 SessionManager
 - [local](./sessions/local/local.go) 用于在单机上启动多个 shard 的连接。下文用 `local` 代表
 - [remote](./sessions/remote/remote.go) 基于 redis 的 list 数据结构，实现分布式的 shard 管理，可以在多个节点上启动多个服务进程。下文用 `remote` 代表
 
-另外，也有其他同事基于 etcd 实现了 shard 集群的管理，在 [botgo-plugns](https://github.com/2mf8/Go-QQ-Client-plugins) 中。
+另外，也有其他同事基于 etcd 实现了 shard 集群的管理，在 [Go-QQ-Client-plugns](https://github.com/2mf8/Go-QQ-Client-plugins) 中。
 
 ## 三、生产环境中的一些建议
 
@@ -93,9 +131,3 @@ sdk 中实现了两个 SessionManager
 ## 四、SDK 开发说明
 
 请查看：[开发说明](./DEVELOP.md)
-
-## 五、加入官方社区
-
-欢迎扫码加入 **QQ 频道开发者社区**。
-
-![开发者社区](https://mpqq.gtimg.cn/privacy/qq_guild_developer.png)
