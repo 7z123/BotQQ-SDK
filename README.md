@@ -1,4 +1,4 @@
-# Go-QQ-Client
+# BotQQ-SDK
 
 QQ频道机器人，官方 GOLANG SDK。
 
