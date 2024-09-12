@@ -4,7 +4,7 @@ QQ频道机器人，官方 GOLANG SDK。
 
 [![Go Reference](https://pkg.go.dev/badge/github.com/2mf8/Go-QQ-Client.svg)](https://pkg.go.dev/github.com/2mf8/Go-QQ-Client)
 
-# [QQ交流群 ](https://qm.qq.com/q/okWktIaAqk)
+# [QQ交流群]
 
 <details>
 
